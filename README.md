@@ -73,22 +73,6 @@ Each transmitted packet is treated like a **mini block** containing:
 - **TTL**
 
 ### Block format
-### System Diagram
-                     +----------------------+
-                     |   Wi-Fi Hotspot      |
-                     | (Phone / Router AP)  |
-                     +----------+-----------+
-                                |
-        -----------------------------------------------------
-        |                        |                         |
-        |                        |                         |
-+---------------+        +---------------+         +---------------+
-|   Node A      |        |   Node B      |         |   Node C      |
-| ESP8266       |        | ESP8266       |         | ESP8266       |
-| Peer Node     |        | Peer Node     |         | Peer Node     |
-| Send/Receive  |        | Send/Receive  |         | Send/Receive  |
-| Verify/Relay  |        | Verify/Relay  |         | Verify/Relay  |
-| Honest Node   |        | Honest Node   |         | Attacker Sim  |
-+---------------+        +---------------+         +---------------+
+
 ```text
 msgId;sender;seq;payload;prevHash;blockHash;ttl
